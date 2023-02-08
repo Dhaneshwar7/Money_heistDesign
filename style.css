@@ -1,0 +1,568 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(3, 139, 1);
+}
+/* --------------------Left First Openingg----------------------- */
+/* --------------------Left First Openingg----------------------- */
+#left{
+    overflow: hidden;
+    z-index: 49;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    background-color: rgb(220, 186, 191);
+}
+
+.center{
+    z-index: 51;
+    position: relative;
+    overflow: hidden;
+    height: 50%;
+    width: 40%;
+}
+.elem{
+    z-index: 55;
+    position: absolute;
+    top: 100%;
+    height: 100%;
+    width: 100%;
+    animation: professor 5s cubic-bezier(0.19, 1, 0.22, 1).5s infinite both; 
+    /* background-color: yellow; */
+    background-image: url(./pmoney22.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+@keyframes professor{
+    0%{
+        top: 100%;
+        bottom: 100%;
+    }
+    50%{
+        top: 0%;
+        bottom: 100%;
+    }
+    100%{
+        top: 0%;
+        bottom: 0%;
+    }
+
+}
+/* ------------------------------left Textt start--------------------- */
+
+.text{
+    position: absolute;
+    top: 15%;
+    /* left: 60%; */
+    left: 23%;
+    z-index: 52;
+    /* background-color: brown; */
+    animation: ltext .5s ease-out .5s both;
+}
+.text>h3{
+    font-size: 4.5vw;
+    line-height: 4.2vw;
+    font-family: "Glitten";
+}
+@keyframes ltext{
+    from {
+        opacity: .6;
+      transform: translateX(0%);
+    }
+  
+    to {
+        opacity: 1;
+      transform: translateX(100%);
+    }
+  }
+  #rbro>h1{
+    padding: 1px;
+    position: absolute;
+    z-index: 65;
+    top:5%;
+    /* left: 60%; */
+    left: 40%;
+    font-size: 17vw;
+    font-weight: lighter;
+    font-family: "Voyage";
+    animation: rbro_h1 2.5s ease-out 2.5s both;
+}
+/* ------------------------------left Textt End--------------------- */
+/* ------------------------------left Textt End--------------------- */
+.text>h5{
+    z-index: 52;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-size: 1.2vw;
+    font-family: "Gilroy";
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.text h3>span{
+    border-bottom: 4px solid red;
+}
+.lines {
+    width: 14vw;
+    position: absolute;
+    font-size: 14px;
+    z-index: 52;
+    top:75%;
+    left: 23%;
+    /* background-color: green; */
+}
+#left>h1{
+    padding: 1px;
+    position: absolute;
+    z-index: 52;
+    top:55%;
+    left: 20%;
+    font-size: 17vw;
+    font-weight: lighter;
+    /* background-color: blue; */
+    font-family: "Voyage";
+    animation: zeroseven .5s ease-out .5s both;
+}
+@keyframes zeroseven{
+    from {
+        opacity: .5;
+      transform: translateY(100%);
+    }
+  
+    to {
+        opacity: 1;
+      transform: translateY(0%);
+    }
+  } 
+/* --------------------Left Second Openingg----------------------- */
+/* --------------------Left Second Openingg----------------------- */
+
+#lbro{
+    top: 100%;
+    background-color: rgb(224, 213, 206);
+    animation: lbro 6s cubic-bezier(0.19, 1, 0.22, 1)2.5s infinite both; 
+}
+@keyframes lbro{
+    0%{
+        top: 100%;
+        bottom: 100%;
+    }
+    50%{
+        top: 0%;
+        bottom: 100%;
+    }
+    100%{
+        top: 100%;
+        bottom: 0%;
+    }
+
+}
+.bothbro{
+    z-index: 60;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.lbro_center{
+    z-index: 51;
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    height: 50%;
+    width: 40%;
+    /* background-color: rgb(0, 238, 255); */
+}
+.lbro_elem{
+    z-index: 50;
+    position: absolute;
+    top: 100%;
+    height: 100%;
+    width: 100%;
+    animation: nana 3s cubic-bezier(0.19, 1, 0.22, 1)2.6s both; 
+    background-color: yellow; 
+    background-image: url(./moneyh.jpeg);
+    background-position: top;
+    background-size: cover;
+}
+@keyframes nana{
+    0%{
+        top: 100%;
+        bottom: 100%;
+    }
+    50%{
+        top: 0%;
+        bottom: 100%;
+    }
+    100%{
+        top: 0%;
+        bottom: 0%;
+    }
+} 
+
+/* --------Text lbro--------- */
+/* --------Text lbro--------- */
+@keyframes lbro_text{
+    from {
+        opacity: .6;
+      transform: translateX(0%);
+    }
+  
+    to {
+        opacity: 1;
+      transform: translateX(100%);
+    }
+  }
+.lbro_text{
+    position: absolute;
+    top: 06%;
+    left: -30%;
+    /* left: 18%; */
+    z-index: 60;
+    animation: lbro_text 3.5s ease-in-out 1s both;
+}
+.lbro_text>h3{
+    font-size: 4.5vw;
+    line-height: 4.2vw;
+    font-family: "Glitten";
+}
+.lbro_text>h5{
+    z-index: 60;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-size: 1.2vw;
+    font-family: "Gilroy";
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.lbro_text h3>span{
+    border-bottom: 4px solid red;
+}
+.lbro_lorem {
+    /* width: 14vw; */ 
+    gap: 10px;
+    display: flex;
+    position: absolute;
+    font-size: 15px;
+    z-index: 60;
+    top:77%;
+    left: 22%;
+    font-family: "VT323";
+    /* background-color: green; */
+}
+.lbro_lorem>i{ margin-top: 10px;
+    font-size: 50px;
+    transform: rotate(5deg);
+}
+#lbro>h1{
+    position: absolute;
+    z-index: 60;
+    top:55%;
+    left: 55%;
+    font-size: 17vw;
+    font-weight: lighter;
+    font-family: "Voyage";
+    animation: rightsleft 2.5s ease-out 2.5s both;
+}
+@keyframes rightsleft{
+    from {
+        opacity: .6;
+      transform: translateX(100%);
+    }
+  
+    to {
+        opacity: 1;
+      transform: translateX(0%);
+    }
+} 
+#rbro>h1{
+    padding: 1px;
+    position: absolute;
+    z-index: 65;
+    top:5%;
+    /* left: 60%; */
+    left: 40%;
+    font-size: 17vw;
+    font-weight: lighter;
+    font-family: "Voyage";
+    animation: rbro_h1 2.5s ease-out 2.5s both;
+}
+@keyframes rbro_h1{
+    from {
+      transform: translateX(0%);
+    }
+  
+    to {
+      transform: translateX(100%);
+    }
+  }
+/* --------------------Right Side----------------------- */
+/* --------------------Right Side----------------------- */
+/* --------------------Right Side----------------------- */
+#right{
+    overflow: hidden;
+    z-index: 30;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:initial;
+    height: 100%;
+    width: 50%;
+    background-color: rgb(224, 213, 206);
+}
+#right .delta>h1{
+    position: absolute;
+    z-index: 9999999999;
+    bottom: 0;
+    left: 20%;
+    transform: translate(-50%,-50%);
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    align-items: flex-end;
+    justify-content: flex-end;
+    /* background-color: brown; */
+    font-family: "Glitten";
+    /* backdrop-filter: blur(10x); */
+}
+.rcenter{
+    z-index: 31;
+    position: absolute;
+    /* overflow: hidden; */
+    height: 50%;
+    width: 40%;
+    /* background-color: #fff; */
+}
+.relem{
+    z-index: 32;
+    position: relative;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    animation: squid 1s cubic-bezier(0.19, 1, 0.22, 1).5s both; 
+    /* background-color: yellow; */
+    background-image: url(./squid2.jpeg);
+    background-position: top;
+    background-size: cover;
+}
+@keyframes squid{
+    0%{
+        top: 0%;
+        bottom: 0%;
+    }
+    50%{
+        top: 50%;
+        bottom: 0%;
+    }
+    100%{
+        top: 50%;
+        bottom: 50%;
+    }
+}
+.rtext>h3{
+    font-size: 4.5vw;
+    line-height: 5vw;
+    font-family: "Glitten";
+}
+.rtext h3>span{
+    font-size: 6vw;
+    letter-spacing: 6px;
+    color: rgb(255, 255, 255);
+}
+.rtext>h5{
+    z-index: 40;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-size: 1.2vw;
+    font-family: "Gilroy";
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.rtext{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 14%;
+    left: 57%;
+    z-index: 40;
+    animation: rightsleft .5s ease-out .5s both;
+}
+#right>h1{
+    padding: 1px;
+    position: absolute;
+    z-index: 40;
+    top:55%;
+    left: 20%;
+    font-size: 17vw;
+    font-weight: lighter;
+    /* background-color: blue; */
+    font-family: "Voyage";
+    animation: zeroseven .5s ease-out .5s both;
+}
+/* --------------------Right  Second Slide----------------------- */
+/* --------------------Right  Second Slide----------------------- */
+/* --------------------Right  Second Slide----------------------- */
+#rbro{
+    bottom: 100%;
+    background-color: rgb(220, 186, 191);
+    animation: rbro 6s cubic-bezier(0.19, 1, 0.22, 1)2.5s infinite both; 
+}
+@keyframes rbro {
+    0%{
+        bottom: 100%;
+        height: 100%;
+    }
+    50%{
+        bottom: 0%;
+        height: 100%;
+    }
+    100%{
+        bottom: 100%;
+        height: 100%;
+    }
+
+}
+#rbro .delta>h1{
+    position: absolute;
+    z-index: 60;
+    top: 2%;
+    left: 60%;
+    letter-spacing: 1px;
+    font-size: 17px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    /* background-color: brown; */
+    font-family: "Glitten";
+    /* backdrop-filter: blur(10x); */
+}
+.rbro_center{
+    z-index: 61;
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    height: 50%;
+    width: 40%;
+    /* background-color: rgb(0, 238, 255); */
+}
+.rbro_elem{
+    z-index: 60;
+    position: absolute;
+    top: 100%;
+    height: 100%;
+    width: 100%;
+    animation: nana 3s cubic-bezier(0.19, 1, 0.22, 1)2.6s both; 
+    /* background-color: yellow;  */
+    background-image: url(./squid.jpeg);
+    background-position: top;
+    background-size: cover;
+}
+@keyframes nana{
+    0%{
+        top: 100%;
+        bottom: 100%;
+    }
+    50%{
+        top: 0%;
+        bottom: 100%;
+    }
+    100%{
+        top: 0%;
+        bottom: 0%;
+    }
+} 
+.rbro_text{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    z-index: 65;
+    animation: rbro_text 3.5s ease-in-out 1s both;
+}
+@keyframes rbro_text{
+    from {
+        opacity: .6;
+      transform: translateX(100%);
+    }
+  
+    to {
+        opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+.rbro_text>h3{
+    font-size: 6vw;
+    /* line-height: 5vw; */
+    font-family: "Glitten";
+}
+/* .rbro_text h3>span{
+    letter-spacing: 4px;
+    color: #fff;
+} */
+.rbro_text>h5{
+    z-index: 65;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-size: 3vw;
+    font-family: "Gilroy";
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.rtext h3>span{
+    border-bottom: 4px solid red;
+}
+#rbro>h1{
+    padding: 1px;
+    position: absolute;
+    z-index: 65;
+    top:5%;
+    /* left: 60%; */
+    left: 40%;
+    font-size: 17vw;
+    font-weight: lighter;
+    font-family: "Voyage";
+    animation: rbro_h1 2.5s ease-out 2.5s both;
+}
+@keyframes rbro_h1{
+    from {
+      transform: translateX(0%);
+    }
+  
+    to {
+      transform: translateX(100%);
+    }
+  }
+
+.rbro_lorem {
+    /* width: 14vw; */ 
+    gap: 10px;
+    display: flex;
+    position: absolute;
+    font-size: 15px;
+    z-index: 60;
+    top:10%;
+    left: 22%;
+    font-family: "VT323";
+    /* background-color: green; */
+}
+.rbro_lorem>i{ margin-top: 10px;
+    font-size: 50px;
+    transform: rotate(5deg);
+}
